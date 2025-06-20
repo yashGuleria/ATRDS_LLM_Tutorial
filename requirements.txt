@@ -1,0 +1,13 @@
+numpy==1.24.3
+openai
+ollama
+chromadb
+streamlit 
+pdfplumber 
+langchain
+langchain-cohere
+langchain-core
+langchain-community
+langchain_text_splitters
+unstructured
+unstructured[all-docs]
