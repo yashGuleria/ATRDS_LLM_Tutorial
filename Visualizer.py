@@ -276,7 +276,7 @@ class MultiAircraftVisualizer:
         
         plt.xlabel('Longitude (degrees)', fontsize=12)
         plt.ylabel('Latitude (degrees)', fontsize=12)
-        plt.title('Multi-Aircraft Flight Paths with Sector 6 Boundary', fontsize=14, fontweight='bold')
+        plt.title('Scenario visualization', fontsize=14, fontweight='bold')
         plt.legend(loc='upper right')
         plt.grid(True, alpha=0.3)
         plt.axis('equal')
@@ -294,7 +294,6 @@ class MultiAircraftVisualizer:
             boundary_lats = [coord[0] for coord in self.sector_boundary]
             boundary_lons = [coord[1] for coord in self.sector_boundary]
             
-            print(f"Adding sector boundary to animation with {len(boundary_lats)} points")
             
             # Fill the sector boundary area
             ax.fill(boundary_lons, boundary_lats, alpha=0.3, color='lightblue', 
@@ -357,7 +356,7 @@ class MultiAircraftVisualizer:
         
         ax.set_xlabel('Longitude (degrees)', fontsize=12)
         ax.set_ylabel('Latitude (degrees)', fontsize=12)
-        ax.set_title('Multi-Aircraft Animation with Sector 6 Boundary', fontsize=14, fontweight='bold')
+        ax.set_title('Scenario visualization', fontsize=14, fontweight='bold')
         ax.legend(loc='upper right')
         ax.grid(True, alpha=0.3)
         ax.axis('equal')
